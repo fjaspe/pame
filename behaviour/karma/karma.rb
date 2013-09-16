@@ -29,10 +29,10 @@ class Karma
   		if @database[m.channel].nil?
   			@database[m.channel] = Hash.new
   		end
-  		if @database[m.channel][m.user].nil?
-  			@database[m.channel][m.user] = 0
+  		if @database[m.channel][item].nil?
+  			@database[m.channel][item] = 0
   		end
-  		 @database[m.channel][m.user] += 1
-    	m.reply "El karma de #{item} ahora es #{@database[m.channel][m.user]}"
+  		 @database[m.channel][item] += 1
+    	m.reply "El karma de #{item} ahora es #{@database[m.channel][item]}"
   	end
 end

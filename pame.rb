@@ -1,3 +1,5 @@
+#! /bin/ruby
+
 require 'cinch'
 require 'yaml'
 require './behaviour/karma/karma'
